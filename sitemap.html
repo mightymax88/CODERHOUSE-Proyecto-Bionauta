@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<!--Lenguaje definido-->
+<html lang="en">
+<!--Esto es una barra de comentarios (para separar)-->
+<head>
+    <!-- Meta tags requeridos -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Empresa argentina de innovación en productos médicos (radioterapia, laboratorio y ortopedia, entre otros) a través de impresión 3D, automatización, robótica y más.">
+    <meta name="keywords" content="impresion, 3D, radioterapia, medicina, nuclear, equipos, medicos, salud, bolus, aplicador">
+    <!-- Título -->
+    <title>Bionautas</title>
+    <!-- Agregando BootstrapCDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Incluyendo CSS -->
+    <link rel="stylesheet" href="/css/main.css">
+    <!-- Info para CSS responsive y Mobile-first styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Agregando fuente Quicksand, Bebas Nue & Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@200&family=Quicksand:wght@600&display=swap" rel="stylesheet">   
+</head>
+
+<!--Empieza el Mapa del Sitio-->
+<body>
+    <header>
+        <!-- Arranca header -->
+        <div class="container-fluid">
+            <div class="row justify-content-start align-items-center">
+                <div class="col-auto">
+                    <div class="header__logo">
+                        <img src="imagenes/Logo1.png" alt="logo_empresa" width="65" height="65">
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="header__encabezado">
+                        <h1>Bionautas</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Creando barra de navegacion -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand" href="#">Menú</a>
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="nosotros.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Nosotros
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="nosotros.html">La Empresa</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="nosotros.html">Misión y Visión</a>
+                            <a class="dropdown-item" href="nosotros.html">¿Quiénes somos?</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Buscar..." aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Arranca el contenido del Mapa -->
+    <ul class="listMapa">
+        <li><a href="/index.html">Inicio</a></li>
+        <li><a href="/productos.html">Productos</a></li>
+            <ul class="listMapa__nosotros">
+                <li><a href="/productos/fantoma.html">Fantoma</a></li>
+                <li><a href="/productos/aplicadores.html">Aplicadores</a></li>
+                <li><a href="/productos/bolus.html">Bolus</a></li>
+            </ul>
+        <li><a href="/nosotros.html">Nosotros</a></li>
+            <ul class="listMapa__nosotros">
+                <li><a href="/nosotros.html">Empresa</a></li>
+                <li><a href="/nosotros.html">Misión</a></li>
+                <li><a href="/nosotros.html">Visión</a></li>
+            </ul>
+        <li><a href="/blog.html">Blog</a></li>
+            <ul class="listMapa__blog">
+                <li><a href="/blog.html">Página 1 (entradas más recientes)</a></li>
+                <li><a href="/blog.html">Página 2</a></li>
+            </ul>
+        <li><a href="/contacto.html">Contacto</a></li>
+        <li><a href="/sitemap.html">Mapa del sitio</a></li>
+            <ul class="listMapa__blog">
+                <li><a href="/404p.html">Ejemplo página no disponible/Error</a></li>
+            </ul>
+    </ul>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer__seguinos">
+            <p>Seguinos</p>
+            <a href="https://www.instagram.com" class="fa fa-instagram"></a>
+            <a href="https://www.linkedin.com" class="fa fa-linkedin"></a>
+            <a href="https://www.facebook.com" class="fa fa-facebook"></a>
+        </div>
+        <div class="footer__autor">
+            <p>Autor: Maximiliano Filipuzzi<br>
+            <a href="mailto:maxi.filipuzzi@gmail.com">maxi.filipuzzi@gmail.com</a><br>
+            <a href="/sitemap.html">Mapa del sitio</a></p></p>
+            </div>
+        <div class="footer__derechos">
+            <p>2020 - 2021 ©Bionautas - Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <!-- Etiquetas script -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
