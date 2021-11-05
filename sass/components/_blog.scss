@@ -1,0 +1,17 @@
+/* Armando la sección Blog con GRID -----------------------------------------------*/
+.blogg {
+    padding: 10px 10px;
+    &__item {
+        text-align: left;
+        font-size: 20px;
+        border-style: solid;
+        border-width: 1px;
+        margin: 5px;
+    }
+    &__cont {
+        text-align: center;
+        padding: 10px 10px;
+        background-color: $primary2;
+        border-radius: 8px;
+    }
+}

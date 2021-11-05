@@ -13,5 +13,13 @@
     "node-sass": "^6.0.1",
     "nodemon": "^2.0.14"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mightymax88/CODERHOUSE-Proyecto-Bionautas.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mightymax88/CODERHOUSE-Proyecto-Bionautas/issues"
+  },
+  "homepage": "https://github.com/mightymax88/CODERHOUSE-Proyecto-Bionautas#readme",
   "description": ""
 }

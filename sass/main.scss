@@ -1,39 +1,56 @@
 /* Empezando con Responsive */
 * {box-sizing: border-box}
 
-/* Importar otros scss */
-@import "/Volumes/GoogleDrive/Mi unidad/Cursos/CODERHOUSE/Carrera de Desarrollo Full Stack/Desarrollo Web/Clase 12/sass/functions";
-@import "/Volumes/GoogleDrive/Mi unidad/Cursos/CODERHOUSE/Carrera de Desarrollo Full Stack/Desarrollo Web/Clase 12/sass/variables";
-@import "/Volumes/GoogleDrive/Mi unidad/Cursos/CODERHOUSE/Carrera de Desarrollo Full Stack/Desarrollo Web/Clase 12/sass/mixins";
-@import "/Volumes/GoogleDrive/Mi unidad/Cursos/CODERHOUSE/Carrera de Desarrollo Full Stack/Desarrollo Web/Clase 12/sass/breadcrumb";
+/* Importar otros scss generales */
+@import "../sass/base/functions";
+@import "../sass/base/variables";
+@import "../sass/base/breadcrumb";
+
+/* Importo scss de las otras secciones */
+@import "../sass/components/inicio.scss";
+@import "../sass/components/productos.scss";
+@import "../sass/components/nosotros.scss";
+@import "../sass/components/blog.scss";
+@import "../sass/components/contacto.scss";
 
 /* Formatos------------------------------------------------------------------- */
 .header{
     text-align: left;
+    &__encabezado {
+        color: $primary;
+        font-family: 'Bebas Neue', cursive;
+        font-size: 120px;
+        margin-top: 25px;
+    }
+    &__logo{
+        margin-left:0px;
+        margin-top:0px;
+    }
 }
-.header__encabezado {
-    color: rgb(10, 136, 77);
+
+.navbar{
+    background-color: $secondary;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 5px;
     font-family: 'Bebas Neue', cursive;
-    font-size: 120px;
-    margin-top: 25px;
 }
-.header__logo{
-    margin-left:0px;
-    margin-top:0px;
-}
+
 h2{
-    color: rgb(10, 136, 77);
+    color: $primary;
     text-align: left;
     font-family: 'Quicksand', sans-serif;
     font-size: 22px;
-    border-bottom: 2px solid rgb(123, 10, 151);
+    border-bottom: 2px solid $secondary;
 }
+
 h3{
     color: black;
     text-align: left;
     font-family: 'Quicksand', sans-serif;
     font-size: 18px;
 }
+
 p{
     font-family: 'Poppins', sans-serif;
 }
@@ -46,189 +63,27 @@ body{
     margin:0px;
 }
 
-.infoemp{
-    text-align: justify;
-}
-.infoemp__im{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.navbar{
-    background-color: rgb(123, 10, 151);
-    color: white;
-    border-radius: 5px;
-    margin-bottom: 5px;
-    font-family: 'Bebas Neue', cursive;
-}
-
-/* Agregando barra de búsqueda */
-input[type=text] {
-    padding: 4px;
-    margin-right: 10px;
-    font-size: 14px;
-    border: none;
-    font-family: 'Bebas Neue', cursive;
-}
-.btn {
-    background: white;
-}
-
-/* Make the image fully responsive */
-.carousel-inner img {
-    width: 100%;
-    height: 100%;
-}
-
-.carousel-caption{
-    color:black;
-}
-
-/* Agregando Media ------------------------------------------------------------- */
-/* Extra small devices (portrait phones, less than 576px) */
-/* No media query since this is the default in Bootstrap */
-
-/* Small devices (landscape phones, 576px and up) */
-@media (max-width: 576px) {
-    .imEmpresa{
+@media screen and (max-width: 960px) {
+    .flexContacto__im{
         display: none;
     }
 }
 
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-    
-}
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-    
-}
-
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-    
-}
-
-/* Armando para la sección Nosotros ---------------------------------------------*/
-.nosotros {
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    color: white;
-}
-.nosotros__empresa{
-    background-color: rgb(123, 10, 151);
-    line-height: 75px;
-    font-family: 'Poppins', sans-serif;
-    text-align: center;
-    border-radius: 10px;
-    margin: 10px;
-}
-.nosotros__mision {
-    background-color: rgb(10, 136, 77);
-    margin: 10px;
-    line-height: 75px;
-    font-family: 'Poppins', sans-serif;
-    text-align: left;
-    border-radius: 10px;
-}
-.nosotros__vision {
-    background-color: rgb(10, 136, 77);
-    margin: 10px;
-    line-height: 75px;
-    font-family: 'Poppins', sans-serif;
-    text-align: right;
-    border-radius: 10px;
-}
-.nosotros__quien {
-    background-color: rgb(10, 136, 77);
-    margin: 10px;
-    line-height: 75px;
-    color: white;
-    font-family: 'Poppins', sans-serif;
-    text-align: center;
-    border-radius: 10px;
-}
-/* Armando la sección Contacto -----------------------------------------------------*/
-.flexContacto {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-.flexContacto__info {
-    margin: 5px;
-    padding-left: 20px;
-    padding-right: 20px;
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-    background-color: rgb(63, 248, 162);
-    border-radius: 8px;
-}
-
-.flexContacto__im{
-    display:block;
-    transform:translate(-20px,-10px);
-}
-
-/* Armando Productos */
-.prodl{
-    margin-top:20px;
-    background: rgb(226, 123, 252);
-    border-radius: 8px;
-}
-
-.prodl__fakeimg {
-    height: 200px;
-    background: #aaa;
-}
-
-.prodr{
-    margin-top:20px;
-}
-
-.prodr__fakeimg {
-    height: 300px;
-    background: #aaa;
-}
-
-/* Armando la sección Blog con GRID -----------------------------------------------*/
-.blogg {
-    padding: 10px 10px;
-}
-.blogg__item {
-    text-align: left;
-    font-size: 20px;
-    border-style: solid;
-    border-width: 1px;
-    margin: 5px;
-}
-.blogg__cont {
-    text-align: center;
-    padding: 10px 10px;
-    background-color: rgb(63, 248, 162);
-    border-radius: 8px;
-}
-
 /* Estilo del footer -----------------------------------------------------*/
-footer{
+.footer{
     padding: 3px;
-    background-color: rgb(123, 10, 151);
+    background-color: $secondary;
     color: white;
     border-radius: 10px;
-}
-
-.footer__autor{
-    text-align:right;
-}
-
-.footer__seguinos{
-    text-align:left;
-}
-
-.footer__derechos{
-    text-align:center;
+    &__autor{
+        text-align:right;
+    }
+    &__seguinos{
+        text-align:left;
+    }
+    &__derechos{
+        text-align:center;
+    }
 }
 
 /* Redes sociales para el footer -------------------------------------------------*/
@@ -240,19 +95,15 @@ footer{
     text-decoration: none;
     margin: 2px 2px;
     border-radius:70%;
+    color:white;
 }
 .fa:hover {
     opacity: 0.7;
 }
-.fa-facebook {
-    background: #3B5998;
-    color: white;
-}
-.fa-linkedin {
-    background: #007bb5;
-    color: white;
-}
-.fa-instagram {
-    background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
-    color: white;
+
+/*Creo each para cambiar el background en las 3 redes sociales*/
+@each $name,$color in $redes{
+    .fa-#{$name}{
+        background:$color;
+    }
 }

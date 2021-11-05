@@ -1,0 +1,18 @@
+/* Armando la sección Contacto -----------------------------------------------------*/
+.flexContacto {
+    display: flex;
+    flex-direction: row;
+    &__info {
+        margin: 5px;
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        background-color: rgb(63, 248, 162);
+        border-radius: 8px;
+    }
+    &__im{
+        display:block;
+        transform:translate(-20px,-10px);
+    }
+}
