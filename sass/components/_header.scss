@@ -1,0 +1,56 @@
+/* Formatos------------------------------------------------------------------- */
+.header{
+    text-align: left;
+    &__encabezado {
+        color: $primary;
+        font-family: 'Bebas Neue', cursive;
+        font-size: 200px;
+        margin-top: 15px;
+    }
+    &__logo{
+        margin-left:0px;
+        margin-top:0px;
+    }
+}
+
+.navbar{
+    background-color: $secondary;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+}
+
+h2{
+    color: $primary;
+    text-align: left;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 22px;
+    border-bottom: 2px solid $secondary;
+}
+
+h3{
+    color: black;
+    text-align: left;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+}
+
+p{
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    margin: 0px;
+}
+
+.row{
+    margin:0px;
+}
+
+@media screen and (max-width: 960px) {
+    .flexContacto__im{
+        display: none;
+    }
+}

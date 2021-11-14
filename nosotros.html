@@ -10,6 +10,7 @@
     <meta name="keywords" content="impresion, 3D, radioterapia, medicina, nuclear, equipos, medicos, salud, bolus, aplicador">
     <!-- Título -->
     <title>Bionautas - Información sobre Nosotros</title>
+    <link rel="icon" type="image/x-icon" href="imagenes/icon_logo.ico">
     <!-- Agregando BootstrapCDN -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- Incluyendo CSS -->
@@ -19,7 +20,8 @@
     <!-- Agregando fuente Quicksand, Bebas Nue & Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@200&family=Quicksand:wght@600&display=swap" rel="stylesheet">   
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@200&family=Quicksand:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">  
 </head>
 
 <!--Empieza el cuerpo-->
@@ -30,7 +32,7 @@
             <div class="row justify-content-start align-items-center">
                 <div class="col-auto">
                     <div class="header__logo">
-                        <img src="imagenes/Logo1.png" alt="logo_empresa" width="65" height="65">
+                        <img src="imagenes/Logo1_preview_rev_1.png" alt="logo_empresa" width="65" height="65">
                     </div>
                 </div>
                 <div class="col-3">
@@ -61,8 +63,8 @@
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="nosotros.html">La Empresa</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="nosotros.html">Misión y Visión</a>
-                            <a class="dropdown-item" href="nosotros.html">¿Quiénes somos?</a>
+                            <a class="dropdown-item" href="nosotros.html#section2">Misión y Visión</a>
+                            <a class="dropdown-item" href="nosotros.html#section3">¿Quiénes somos?</a>
                         </div>
                     </li>
                     <li class="nav-item">
@@ -82,12 +84,21 @@
 
     <!-- Cuerpo, con las secciones Nosotros, Misión, Visión y más -->
     <div class="nosotros">
-        <div class="nosotros__empresa">
-            <p>Somos una startup argentina focalizada en innovador en la producción de equipos médicos. Buscamos innovar mediante la integración de impresión 3D, robótica y diseño personalizado. Esto nos permitirá introducir nuevas tecnologías que optimicen el trabajo de nuestros clientes.</p>
+        <div class="nosotros__empresa" id="section1">
+            <h4>Somos una startup argentina focalizada en la producción de equipos médicos. Buscamos innovar mediante la integración de impresión <i class="material-icons" style="font-size:20px">3d_rotation</i>, robótica y diseño personalizado. Esto nos permitirá introducir nuevas tecnologías que optimicen el trabajo de nuestros clientes. <i class="material-icons" style="font-size:24px">sentiment_very_satisfied</i></h4>
         </div>
-        <div class="nosotros__mision">Misión: proveer productos superiores por medio del desarrollo de innovaciones y soluciones que satisfagan las necesidades de nuestros clientes.</div>
-        <div class="nosotros__vision">Visión: convertirnos en la empresa líder en producción de equipos médicos especializados del mercado local.</div>
-        <div class="nosotros__quien">¿Quiénes somos? Un equipo multidisciplinario de bioingenieros, médicos, físicos y programadores que trabajan juntos para innovar y hacer sus sueños realidad.</div> 
+        <div class="nosotros__mision" id="section2">
+            <h2>Misión</h2>
+            <p>Proveer productos superiores por medio del desarrollo de innovaciones y soluciones que satisfagan las necesidades de nuestros clientes.</p>
+        </div>
+        <div class="nosotros__vision" id="section2">
+            <h2>Visión</h2>
+            <p>Convertirnos en la empresa líder en producción de equipos médicos especializados del mercado local.</p>
+        </div>
+        <div class="nosotros__quien" id="section3">
+            <h3>¿Quiénes somos?</h3>
+            <p>Somos un equipo multidisciplinario <i class="material-icons" style="font-size:16px">people</i> de bioingenieros, médicos, físicos y programadores que trabajan juntos para innovar y hacer sus sueños realidad.</p>
+        </div> 
     </div>
 
     <!-- Footer -->

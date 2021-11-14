@@ -1,0 +1,38 @@
+/* Estilo del footer -----------------------------------------------------*/
+.footer{
+    padding: 3px;
+    background-color: $secondary;
+    color: white;
+    border-radius: 10px;
+    &__autor{
+        text-align:right;
+    }
+    &__seguinos{
+        text-align:left;
+    }
+    &__derechos{
+        text-align:center;
+    }
+}
+
+/* Redes sociales para el footer -------------------------------------------------*/
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 60px;
+    text-align: center;
+    text-decoration: none;
+    margin: 2px 2px;
+    border-radius:70%;
+    color:white;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+
+/*Creo each para cambiar el background en las 3 redes sociales*/
+@each $name,$color in $redes{
+    .fa-#{$name}{
+        background:$color;
+    }
+}

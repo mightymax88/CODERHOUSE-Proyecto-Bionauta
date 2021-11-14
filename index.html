@@ -10,6 +10,7 @@
     <meta name="keywords" content="impresion, 3D, radioterapia, medicina, nuclear, equipos, medicos, salud, bolus, aplicador">
     <!-- Título -->
     <title>Bionautas - Innovación en salud</title>
+    <link rel="icon" type="image/x-icon" href="imagenes/icon_logo.ico">
     <!-- Agregando BootstrapCDN -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- Incluyendo CSS -->
@@ -30,7 +31,7 @@
             <div class="row justify-content-start align-items-center">
                 <div class="col-auto">
                     <div class="header__logo">
-                        <img src="imagenes/Logo1.png" alt="logo_empresa" width="65" height="65">
+                        <img src="imagenes/Logo1_preview_rev_1.png" alt="logo_empresa" width="65" height="65">
                     </div>
                 </div>
                 <div class="col-3">
@@ -61,8 +62,8 @@
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="nosotros.html">La Empresa</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="nosotros.html">Misión y Visión</a>
-                            <a class="dropdown-item" href="nosotros.html">¿Quiénes somos?</a>
+                            <a class="dropdown-item" href="nosotros.html#section2">Misión y Visión</a>
+                            <a class="dropdown-item" href="nosotros.html#section3">¿Quiénes somos?</a>
                         </div>
                     </li>
                     <li class="nav-item">
@@ -87,11 +88,11 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-8">
-                <p>Somos fabricantes de equipos médicos mediante impresión 3D.
-                    Contamos con fantomas para dosimetría ☢, bolus para radioterapia,
-                    aplicadores para braquiterapia y más 🔬.
-                </p>
+                <p>Somos fabricantes de equipos médicos mediante impresión 3D.</p>
+                <p>Contamos con fantomas para dosimetría ☢, bolus para radioterapia,
+                    aplicadores para braquiterapia y más 🔬.</p>
                 <p>Todos nuestros productos son de producción nacional.</p>
+                <p>Hacemos equipos a medida, según tus necesidades. ¡Contactanos!</p>
             </div>
             <div class="col-md-4">
                 <!-- Slideshow container -->
@@ -144,37 +145,33 @@
                 <img class="infoEmp__im" src="imagenes/empresa.png" alt="pEmpresa">
             </div>
             <div class="col-md-8 infoEmp">
-                <p>
-                    Somos una startup nacional, que busca innovar en el ábmito de la atención sanitaria.
-                    Nos enfocamos en automatización de procesos e introducción de nuevas herramientas como
+                <p>Somos una startup nacional, que busca innovar en el ábmito de la atención sanitaria.
+                <br><br>Nos enfocamos en automatización de procesos e introducción de nuevas herramientas como
                     inteligencia artificial, a la vez que aplicamos diseño e impresión 3D para desarrollar
                     nuestros prototipos y productos finales.
-                    <br>Hacé click <a href="nosotros.html">acá</a> si querés saber más sobre Nosotros.
-                </p>
+                <br><br>Hacé click <a href="nosotros.html">acá</a> si querés saber más sobre Nosotros.</p>
             </div>
         </div>
     </div>
     <br>
 <!-- Sección Blogs -->
     <div class="container-fluid">
-        <h2>Blogs más recientes</h2>
+        <h2>Subscribite a nuestro Blog</h2>
     </div>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-4">
-                <h3>Blog N</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+    <div class="container-fluid blogg__cont">
+        <form action="/action_page.php">
+            <div class="container-fluid">
+                <h3>Para recibir novedades sobre publicaciones científicas, nuevos productos y más.</h3>
             </div>
-            <div class="col-sm-4">
-                <h3>Blog N-1</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+            <br>
+            <div class="container-fluid">
+                <input type="text" placeholder="Nombre" name="name" required>
+                <input type="text" placeholder="Email" name="mail" required>
+                <input type="submit" value="Subscribirme">
             </div>
-            <div class="col-sm-4">
-                <h3>Blog N-2</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
-            </div>
-        </div>
+        </form>
     </div>
+    <br>
 <!-- Footer -->
     <footer>
         <div class="container-fluid footer">

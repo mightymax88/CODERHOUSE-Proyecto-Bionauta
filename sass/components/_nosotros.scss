@@ -5,7 +5,7 @@
     background-color: white;
     color: white;
     &__empresa{
-        background-color: rgb(123, 10, 151);
+        background-color: $secondary2;
         line-height: 75px;
         font-family: 'Poppins', sans-serif;
         text-align: center;
@@ -13,26 +13,28 @@
         margin: 10px;
     }
     &__mision {
-        background-color: rgb(10, 136, 77);
+        background-color: white;
         margin: 10px;
         line-height: 75px;
         font-family: 'Poppins', sans-serif;
         text-align: left;
         border-radius: 10px;
+        color: black;
     }
     &__vision {
-        background-color: rgb(10, 136, 77);
+        background-color: white;
         margin: 10px;
         line-height: 75px;
         font-family: 'Poppins', sans-serif;
         text-align: right;
         border-radius: 10px;
+        color: black;
     }
     &__quien {
-        background-color: rgb(10, 136, 77);
+        background-color: $primary2;
         margin: 10px;
         line-height: 75px;
-        color: white;
+        color: black;
         font-family: 'Poppins', sans-serif;
         text-align: center;
         border-radius: 10px;
