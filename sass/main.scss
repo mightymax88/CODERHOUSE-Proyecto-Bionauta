@@ -2,9 +2,9 @@
 * {box-sizing: border-box}
 
 /* Importar otros scss generales */
-@import "../sass/base/functions";
-@import "../sass/base/variables";
-@import "../sass/base/breadcrumb";
+@import "base/functions";
+@import "base/variables";
+@import "base/breadcrumb";
 
 /* Importo scss de las otras secciones */
 @import "components/inicio";
